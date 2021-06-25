@@ -23,52 +23,100 @@ h1{
     color: #fff;
     text-shadow: 1px 1px 1px #000;
 }
+
+.smartBox p, #media{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 60vw;
+}
+
+.bi{
+    position:absolute;
+    color: #fff;
+    background: none;
+    font-size: 4em;
+    top: 30vh;
+}
+
+#showLeft{
+left:1.5vw;
+}
+
+#showRight{
+right:1.5vw;
+}
+
+#media{
+    height : 60vh;
+}
+
 #buttonBox{
     list-style: none;
-    overflow: hidden;
-    height:130px;
+    height:12vh;
     margin : 5px 5px 5px 5px;
+    overflow: hidden;
     clear: both;
     display: inline-block;
 }
 
-#lineVideo{
+#lineMedia{
     float:left;
+    height: 11vh;
     overflow: hidden;
     margin : 5px 5px 5px 5px;
+    width:11vh;
 }
 
-.buttonVideo{
+
+
+.buttonMedia{
+    margin: auto;
     position: relative;
     cursor: pointer;
-    width:98px;
-    height:98px;
     background: #000;
-    border: 2px solid rgb(95, 51, 51);
+    border: 2px solid #222;
     border-radius: 5px;
-    box-shadow: 2px 2px 2px rgb(5, 5, 5);
+    box-shadow: 2px 2px 2px #222;
     opacity:0.75;
-    clear:both;
 }
 
-.buttonVideo:hover{
-    width:98px;
-    height: 98px;
+.buttonMedia:hover{
+    box-shadow: 5px 5px 5px #555;
     opacity:1;
-    border: 1px solid rgb(255, 11, 11);
-    
 }
+
+@media screen and (max-width:800px)
+{
+    #buttonBox{
+        height:8vh;
+
+    }
+    #lineVideo{
+        height:6vh;
+        width:6vh;
+    }
+    .buttonMedia{
+        height:5vh;
+        width:5vh;
+    } 
+}
+
+@media screen and (min-width:800px)
+{
+    .buttonMedia{
+        height:10vh;
+        width:10vh;
+    }
+   
+}
+
+
 
 /*Gerer les boutons et l'affichage dans le document*/
 .smartBox{
-    margin:0px;
-    padding:0px;
-    text-align: center;
-    width:100%
-}
-.smartBox #media{
-    margin:150px 0px;
-    height:70%;
+    margin:0px auto;
+    padding:0px auto;
 }
 
 #description{

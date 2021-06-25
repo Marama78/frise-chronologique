@@ -16,28 +16,22 @@
         
     </head>
 
-    <body >
+    <body style = "background-image: url('images/1bg.jpg');">
         <div class="container">
             <div id="upper" class="col-xl-10 col-sm-12">
-                <div>
-                     <h1 id='Title'>Ma frise Chronologique</h1>
-                    <span class="col-1" id='arriere'><br>&lt</span>
-                    <span class="col-1" id='avant'><br>&gt</span>
-                    <div class="smartBox col-10">
-                            <br><br><br>lecteur de video
-                    </div>
-                </div>
-               
+                    <h1 id='Title'>Ma frise Chronologique</h1>
+                    <a class="bi bi-arrow-left-circle-fill" id="showLeft" type="button"></a>
+                    <a class="bi bi-arrow-right-circle-fill"  id="showRight" type="button"></a>
+                    <div class="smartBox col-12"></div>
             </div>
         </div>
     </body>
     
     <footer>
-        <div class="container col-12">
-            <div id="menu">
-                <ul id="buttonBox">
-                
-                </ul>
+        <div class="container ">
+            <div id="butttonLine" style="position: absolute; left: 0; bottom: 0;right: 0;  height: 15vh; backdrop-filter:blur(7px);">
+                    <ul id="buttonBox">
+                    </ul>
             </div>
         </div>
     </footer>
